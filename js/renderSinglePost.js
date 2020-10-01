@@ -1,21 +1,18 @@
+import renderHeader from './renderHeader.js';
+import renderContent from './renderContent.js';
+import renderFooter from './renderFooter.js';
+
 function renderSinglePost(data) {
     // validacija
 
 
     // logika
-    console.log('Generuoju viena posta');
-    console.log(data);
+    // console.log(data);
 
     return `<div class="post">
-                <header>
-                    AVATARAS + ${data.author.name} ${data.author.lastname}
-                </header>
-                <div>
-                    TEXT + IMAGES
-                </div>
-                <footer>
-                    LIKE + COMMENT
-                </footer>
+                ${renderHeader(data.author, data.postTimestamp)}
+                ${renderContent(data.content)}
+                ${renderFooter()}
             </div>`;
 }
 
