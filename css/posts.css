@@ -1,7 +1,6 @@
 .post {
     display: inline-block;
     width: 100%;
-    padding: 10px;
     margin-bottom: 40px;
     border: 1px solid #ccc;
 }
@@ -9,6 +8,7 @@
         display: grid;
         gap: 15px;
         grid-template-columns: 50px 1fr 30px;
+        padding: 10px;
     }
         .post > .post-header > .avatar-link {
             width: 100%;
@@ -31,6 +31,72 @@
     .post > div {
 
     }
+        .post > div > p {
+            padding: 10px;
+        }
+            .big-font {
+                font-size: 30px;
+            }
+            .see-more {
+                color: #36f;
+                cursor: pointer;
+            }
+                .see-more:hover {
+                    text-decoration: underline;
+                }
+        .post .gallery {
+            display: inline-block;
+            width: 100%;
+            height: 300px;
+            position: relative;
+        }
+            .post .gallery > img {
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+                float: left;
+                object-position: center;
+                object-fit: cover;
+            }
+            .post .gallery.gallery-2 {
+                height: 360px;
+            }
+                .post .gallery.gallery-2 > img {
+                    width: 50%;
+                }
+            .post .gallery.gallery-3 {
+                height: 420px;
+            }
+                .post .gallery.gallery-3 > img {
+                    width: 50%;
+                    height: 50%;
+                }
+                .post .gallery.gallery-3 > img:first-of-type {
+                    width: 100%;
+                }
+            .post .gallery.gallery-4 {
+                height: 440px;
+            }
+                .post .gallery.gallery-4 > img {
+                    width: 50%;
+                    height: calc(100% / 3);
+                }
+                .post .gallery.gallery-4 > img:first-of-type {
+                    height: 100%;
+                }
+        .post .gallery > .more-photos {
+            display: inline-block;
+            width: 50%;
+            height: calc(100% / 3);
+            background-color: #000c;
+            color: #fff;
+            text-align: center;
+            line-height: 147px;
+            font-size: 40px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
     .post > footer {
 
     }
