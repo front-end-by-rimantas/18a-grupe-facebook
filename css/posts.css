@@ -1,0 +1,36 @@
+.post {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 40px;
+    border: 1px solid #ccc;
+}
+    .post > .post-header {
+        display: grid;
+        gap: 15px;
+        grid-template-columns: 50px 1fr 30px;
+    }
+        .post > .post-header > .avatar-link {
+            width: 100%;
+        }
+            .post > .post-header > .avatar-link > .avatar {
+                width: 100%;
+            }
+        .post > .post-header > .post-user {
+            
+        }
+            .post > .post-header > .post-user > .user {
+                
+            }
+            .post > .post-header > .post-user > .timestamp {
+                
+            }
+        .post > .post-header > .fa {
+            
+        }
+    .post > div {
+
+    }
+    .post > footer {
+
+    }
