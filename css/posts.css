@@ -34,6 +34,15 @@
         .post > div > p {
             padding: 10px;
         }
+            .post > div > p.hidden {
+                display: none;
+            }
+            .post > div.show > p {
+                display: none;
+            }
+            .post > div.show > p.hidden {
+                display: inline-block;
+            }
             .big-font {
                 font-size: 30px;
             }

@@ -5,7 +5,6 @@ import renderFooter from './renderFooter.js';
 function renderSinglePost(data) {
     // validacija
 
-
     // logika
     // console.log(data);
 

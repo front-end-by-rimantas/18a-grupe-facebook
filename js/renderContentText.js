@@ -16,7 +16,8 @@ function renderContentText(text) {
         for (let i = 0; i < normalTextLength; i++) {
             shorterText += text[i];
         }
-        return `<p>${shorterText}... <span class="see-more">See more</span></p>`;
+        return `<p>${shorterText}... <span class="see-more">See more</span></p>
+                <p class="hidden">${text}</p>`;
     } else {
         // o jei teksto daugiau nei leidziama maksimaliai - rodom klaida
         console.warn(`ERROR: virsyta maksimali (${largeTextLength}) leistina teksto riba.`);
