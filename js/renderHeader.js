@@ -1,3 +1,5 @@
+import formatTime from './formatTime.js';
+
 function renderHeader(data, time) {
     return `<header class="post-header">
                 <a class="avatar-link" href="#user/${data.link}">
@@ -5,7 +7,7 @@ function renderHeader(data, time) {
                 </a>
                 <div class="post-user">
                     <a class="user" href="#user/${data.link}">${data.name} ${data.lastname}</a>
-                    <div class="timestamp">6h ago (${time})</div>
+                    <div class="timestamp">${formatTime(time)}</div>
                 </div>
                 <i class="fa fa-ellipsis-h"></i>
             </header>`;
