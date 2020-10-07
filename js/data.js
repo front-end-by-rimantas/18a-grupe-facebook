@@ -34,6 +34,7 @@ const posts = [
     //     }
     // },
     {
+        id: 1,
         author: {
             photo: 'chuck-norris.jpg',
             name: 'Chuck',
@@ -46,6 +47,7 @@ const posts = [
         }
     },
     {
+        id: 2,
         author: {
             photo: 'algimantas-cekuolis.jpg',
             name: 'Algimantas',
@@ -58,6 +60,7 @@ const posts = [
         }
     },
     {
+        id: 3,
         author: {
             photo: 'algimantas-cekuolis.jpg',
             name: 'Algimantas',
@@ -70,6 +73,7 @@ const posts = [
         }
     },
     {
+        id: 4,
         author: {
             photo: 'harley-quinn.jpg',
             name: 'Harley',
@@ -83,6 +87,7 @@ const posts = [
         }
     },
     {
+        id: 5,
         author: {
             photo: 'jackie-chan.jpg',
             name: 'Jackie',
@@ -98,6 +103,7 @@ const posts = [
         }
     },
     {
+        id: 6,
         author: {
             photo: 'bruce-lee.jpg',
             name: 'Bruce',
@@ -114,6 +120,7 @@ const posts = [
         }
     },
     {
+        id: 7,
         author: {
             photo: 'bruce-willis.jpg',
             name: 'Bruce',
@@ -131,6 +138,7 @@ const posts = [
         }
     },
     {
+        id: 8,
         author: {
             photo: 'ip-man.jpg',
             name: 'Ip',
@@ -149,6 +157,7 @@ const posts = [
         }
     },
     {
+        id: 9,
         author: {
             photo: 'optimus-prime.png',
             name: 'Optimus',
@@ -170,6 +179,7 @@ const posts = [
         }
     },
     {
+        id: 10,
         author: {
             photo: 'homer-simpson.jpg',
             name: 'Homer',
@@ -182,6 +192,7 @@ const posts = [
         }
     },
     {
+        id: 11,
         author: {
             photo: 'wonder-woman.jpg',
             name: 'Wonder',
@@ -195,6 +206,7 @@ const posts = [
         }
     },
     {
+        id: 12,
         author: {
             photo: 'wonder-woman.jpg',
             name: 'Wonder',

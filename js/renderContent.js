@@ -1,9 +1,15 @@
 import renderContentText from './renderContentText.js';
 import renderContentGallery from './renderContentGallery.js';
 
-function renderContent(data) {
+function renderContent(data, post_id) {
+    // console.log(data);
+    const contentText = {
+        id: post_id,
+        text: data.text,
+        background: data.background
+    };
     return `<div class="content">
-                ${renderContentText(data.text)}
+                ${renderContentText(contentText)}
                 ${renderContentGallery(data.photos)}
             </div>`;
 }

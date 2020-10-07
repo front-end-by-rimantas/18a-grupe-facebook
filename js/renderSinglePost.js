@@ -8,9 +8,9 @@ function renderSinglePost(data) {
     // logika
     // console.log(data);
 
-    return `<div class="post">
+    return `<div class="post" id="post_${data.id}">
                 ${renderHeader(data.author, data.postTimestamp)}
-                ${renderContent(data.content)}
+                ${renderContent(data.content, data.id)}
                 ${renderFooter()}
             </div>`;
 }

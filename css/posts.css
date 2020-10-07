@@ -28,29 +28,47 @@
         .post > .post-header > .fa {
             
         }
-    .post > div {
+    .post > .content {
 
     }
-        .post > div > p {
+        .post > .content > p {
+            display: inline-block;
             padding: 10px;
         }
-            .post > div > p.hidden {
+            .post > .content > p.hidden {
                 display: none;
             }
-            .post > div.show > p {
+            .post > .content.show > p {
                 display: none;
             }
-            .post > div.show > p.hidden {
+            .post > .content.show > p.hidden {
                 display: inline-block;
+            }
+            .post > .content > p.background {
+                display: flex;
+                width: 100%;
+                height: 300px;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+            .post > .content > p.orange {
+                background-color: orange;
+            }
+            .post > .content > p.red {
+                background-color: red;
+                color: #fff;
             }
             .big-font {
                 font-size: 30px;
             }
-            .see-more {
+            .see-more,
+            .see-less {
                 color: #36f;
                 cursor: pointer;
             }
-                .see-more:hover {
+                .see-more:hover,
+                .see-less:hover {
                     text-decoration: underline;
                 }
         .post .gallery {
