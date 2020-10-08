@@ -16,6 +16,30 @@ function renderPosts(data) {
 
     // perrasome reikiamo HTML elemento turini
     feedDOM.innerHTML = HTML;
+
+    // uzdeti norimas JS interakcijas
+    const allSeeMoreDOM = document.querySelectorAll('.post .see-more');
+
+    for (let i = 0; i < allSeeMoreDOM.length; i++) {
+        const seeMore = allSeeMoreDOM[i];
+
+        seeMore.addEventListener('click', function () {
+            // nukeliaujame/susirande artimiausia tevini elementa .content
+            const contentDOM = seeMore.closest('.content');
+            contentDOM.classList.add('show');
+        });
+    }
+
+    const allSeeLessDOM = document.querySelectorAll('.post .see-less');
+
+    for (let i = 0; i < allSeeLessDOM.length; i++) {
+        const seeLess = allSeeLessDOM[i];
+
+        seeLess.addEventListener('click', () => {
+            const contentDOM = seeLess.closest('.content');
+            contentDOM.classList.remove('show');
+        })
+    }
 }
 
 export default renderPosts;
